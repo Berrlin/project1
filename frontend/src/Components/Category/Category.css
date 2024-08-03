@@ -1,0 +1,123 @@
+/* .menu-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0px;
+    gap: 20px;
+}
+
+.menu-list::-webkit-scrollbar{
+    display: none;
+}
+
+.menu-list-item img{
+    width: 150px;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.menu-list-item p{
+    margin-top: 10px;
+    color: #747474;
+    font-size: max(1.4vw,16px);
+    cursor: pointer;
+}
+
+.menu-list-item{
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 30%;
+}
+
+.menu-list-item .active{
+    color: blue;
+} */
+
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0px;
+    gap: 20px;
+    overflow-x: auto;
+    flex-wrap: wrap; /* Để các mục có thể xuống dòng trên màn hình nhỏ */
+}
+
+.menu-list::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-list-item {
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 30%;
+    max-width: 150px; /* Thêm max-width */
+    cursor: pointer;
+    transition: border-color 0.2s, transform 0.2s; /* Thêm hiệu ứng chuyển đổi */
+    flex: 1 1 auto; /* Để mục tự động điều chỉnh kích thước */
+}
+
+.menu-list-item img {
+    width: 100%; /* Sử dụng width 100% để tuân theo max-width của .menu-list-item */
+    min-width: 80px;
+    border-radius: 50%;
+    transition: transform 0.2s; /* Thêm hiệu ứng chuyển đổi */
+}
+
+.menu-list-item p {
+    margin-top: 10px;
+    color: #747474;
+    font-size: max(1.4vw, 16px);
+}
+
+.menu-list-item.active {
+    border-color: blue; /* Thay đổi màu viền khi active */
+    transform: scale(1.001); /* Phóng to một chút khi active */
+}
+
+.menu-list-item.active p {
+    color: blue; /* Thay đổi màu chữ khi active */
+}
+
+.menu-list-item.active img {
+    transform: scale(1.1); /* Phóng to hình ảnh khi active */
+}
+
+/* Media queries cho các kích thước màn hình khác nhau */
+
+@media (max-width: 1200px) {
+    .menu-list-item {
+        max-width: 120px; /* Giảm kích thước cho màn hình nhỏ hơn */
+    }
+
+    .menu-list-item p {
+        font-size: max(1.2vw, 14px); /* Điều chỉnh kích thước font chữ */
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-list-item {
+        max-width: 100px; /* Giảm kích thước cho máy tính bảng */
+    }
+
+    .menu-list-item p {
+        font-size: max(1vw, 12px); /* Điều chỉnh kích thước font chữ */
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-list {
+        gap: 10px; /* Giảm khoảng cách giữa các mục */
+    }
+
+    .menu-list-item {
+        max-width: 80px; /* Giảm kích thước cho điện thoại di động */
+    }
+
+    .menu-list-item p {
+        font-size: max(0.8vw, 10px); /* Điều chỉnh kích thước font chữ */
+    }
+}

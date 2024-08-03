@@ -1,0 +1,50 @@
+
+.car-display {
+    padding: 20px;
+    text-align: center;
+}
+
+.car-display-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.slick-slide {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.car-item {
+    transition: transform 0.3s ease-in-out;
+}
+
+.car-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom CSS for dots */
+.slick-dots {
+    bottom: -30px;
+    /* Adjust position of dots */
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #000;
+    /* Default color for dots */
+    opacity: 1;
+    /* Make sure dots are fully visible */
+}
+
+.slick-dots li.slick-active button:before {
+    color: #ff0000;
+    /* Color for active dot */
+}

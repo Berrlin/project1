@@ -1,0 +1,40 @@
+
+.car-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.car-item-image-wrapper {
+    width: 100%;
+    padding-top: 75%;
+    /* Tỷ lệ khung hình 4:3 (chiều cao = 75% của chiều rộng) */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.car-item-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Đảm bảo hình ảnh bao phủ toàn bộ khung chứa */
+    border-radius: 10px;
+}
+
+.car-item h2 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.car-item p {
+    margin: 5px 0;
+}

@@ -1,0 +1,128 @@
+/* .collection{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    margin-left: 40px;
+}
+
+.collection-content{
+ text-align: center;
+ align-items: center;
+ justify-content: center;
+}
+
+.collection-content h1{
+    font-size: 70px;
+}
+
+.collection-content p{
+    font-size: 18px;
+    align-items: center;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.collection-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+}
+
+@media (max-width: 1050px) {
+    .collection-content h1 {
+        font-size: 22px;
+    }
+    .collection-content p {
+        font-size: 16px;
+    }
+    .collection-list {
+        gap: 20px;
+        row-gap: 40px;
+    }
+}
+
+@media (max-width: 650px) {
+    .collection-content h1 {
+        font-size: 20px;
+    }
+    .collection-content p {
+        font-size: 14px;
+    }
+    .collection-list {
+        gap: 15px;
+        row-gap: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .collection-content h1 {
+        font-size: 18px;
+    }
+    .collection-content p {
+        font-size: 12px;
+    }
+    .collection-list {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        row-gap: 20px;
+    }
+} */
+
+.collection {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.collection-content {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.collection-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.collection-content p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.collection-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+@media (max-width: 1050px) {
+    .collection-content h1 {
+        font-size: 2em;
+    }
+    .collection-content p {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 650px) {
+    .collection-content h1 {
+        font-size: 1.8em;
+    }
+    .collection-content p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 500px) {
+    .collection-content h1 {
+        font-size: 1.5em;
+    }
+    .collection-content p {
+        font-size: 0.9em;
+    }
+}

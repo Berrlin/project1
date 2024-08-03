@@ -1,0 +1,41 @@
+.add {
+    margin-top: 50px;
+    margin-left: max(5vw, 25px);
+    width: 70%;
+    color: #6d6d6d;
+    font-size: 16px;
+
+}
+
+.add form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.addname, .adddesc{
+    width: max(40%,280px)
+}
+
+.addname input, .adddesc textarea{
+    padding: 10px;
+}
+
+.add-price-category{
+    display: flex;
+    gap: 30px;
+}
+
+.add-price-category select,.add-price-category input{
+    max-width: 120px;
+    padding: 10px;
+}
+
+.add-btn{
+    max-width: 120px;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}

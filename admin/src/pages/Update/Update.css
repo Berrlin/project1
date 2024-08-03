@@ -1,0 +1,54 @@
+.update-car {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.update-car h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.update-car form {
+  display: flex;
+  flex-direction: column;
+}
+
+.update-car form div {
+  margin-bottom: 10px;
+}
+
+.update-car form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.update-car form input,
+.update-car form select,
+.update-car form textarea {
+  padding: 8px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.update-car form textarea {
+  resize: vertical;
+}
+
+.update-car form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.update-car form button:hover {
+  background-color: #0056b3;
+}

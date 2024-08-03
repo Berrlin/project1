@@ -1,0 +1,272 @@
+/* .collection-item {
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px;
+    gap: 10px;
+}
+
+.collection-item img {
+    width: 550px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.collection-item h1 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.collection-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+.collection-item button {
+    margin-top: 10px;
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+.collection-item button span {
+    position: relative;
+    z-index: 2;
+}
+
+.collection-item button:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    transition: all .35s;
+}
+
+.collection-item button:hover {
+    color: #fff;
+}
+
+.collection-item button:hover:after {
+    width: 100%;
+}
+
+
+@media (max-width: 1050px) {
+    .collection-item {
+        max-width: 500px;
+        padding: 15px;
+        margin: 15px;
+    }
+    .collection-item img {
+        width: 450px;
+        height: 350px;
+    }
+    .collection-item h1 {
+        font-size: 1.4em;
+    }
+    .collection-item p {
+        font-size: 0.95em;
+    }
+    .collection-item button {
+        width: 180px;
+        height: 35px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 650px) {
+    .collection-item {
+        max-width: 400px;
+        padding: 10px;
+        margin: 10px;
+    }
+    .collection-item img {
+        width: 350px;
+        height: 300px;
+    }
+    .collection-item h1 {
+        font-size: 1.3em;
+    }
+    .collection-item p {
+        font-size: 0.9em;
+    }
+    .collection-item button {
+        width: 160px;
+        height: 30px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    .collection-item {
+        max-width: 100%;
+        padding: 5px;
+        margin: 5px;
+    }
+    .collection-item img {
+        width: 100%;
+        height: auto;
+    }
+    .collection-item h1 {
+        font-size: 1.2em;
+    }
+    .collection-item p {
+        font-size: 0.85em;
+    }
+    .collection-item button {
+        width: 140px;
+        height: 25px;
+        font-size: 12px;
+    }
+} */
+
+.collection-item {
+    max-width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.2s;
+}
+
+.collection-item:hover {
+    transform: scale(1.02);
+}
+
+.collection-item img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.collection-item h1 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.collection-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+.collection-item button {
+    margin-top: 10px;
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+.collection-item button span {
+    position: relative;
+    z-index: 2;
+}
+
+.collection-item button:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    transition: all .35s;
+}
+
+.collection-item button:hover {
+    color: #fff;
+}
+
+.collection-item button:hover:after {
+    width: 100%;
+}
+
+@media (max-width: 1050px) {
+    .collection-item img {
+        max-height: 250px;
+    }
+    .collection-item h1 {
+        font-size: 1.4em;
+    }
+    .collection-item p {
+        font-size: 0.95em;
+    }
+    .collection-item button {
+        width: 180px;
+        height: 35px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 650px) {
+    .collection-item img {
+        max-height: 200px;
+    }
+    .collection-item h1 {
+        font-size: 1.3em;
+    }
+    .collection-item p {
+        font-size: 0.9em;
+    }
+    .collection-item button {
+        width: 160px;
+        height: 30px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    .collection-item img {
+        max-height: 150px;
+    }
+    .collection-item h1 {
+        font-size: 1.2em;
+    }
+    .collection-item p {
+        font-size: 0.85em;
+    }
+    .collection-item button {
+        width: 140px;
+        height: 25px;
+        font-size: 12px;
+    }
+}
