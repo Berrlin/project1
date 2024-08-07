@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import UpdateCar from './pages/Update/Update';
 
 const App = () => {
-  const url = "https://project1-backend-io07.onrender.com";
+  const url = "https://project1-0yzw.onrender.com";
   return (
     <div>
       <ToastContainer/>
